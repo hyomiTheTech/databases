@@ -1,12 +1,12 @@
-var Sequelize = require('Sequelize');
-var orm = new Sequelize('chat', 'fred', 'fre');
+var Sequelize = require("Sequelize");
+var orm = new Sequelize("chat", "fred", "fre");
 
-var User = orm.define('user', {
+var User = orm.define("user", {
   username: Sequelize.STRING
 });
 
-var Message = orm.define('Message', {
-  text: Sequelize.STRING
+var Message = orm.define("Message", {
+  text: Sequelize.STRING,
   roomname: Sequelize.STRING
 });
 

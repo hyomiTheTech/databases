@@ -17,13 +17,15 @@ module.exports = {
       // });
     }, // a function which handles a get request for all messages
     post: function(req, res) {
-      User.findOrCreate({username: req.body[username]})
-      .complete(function(err, results){
-        user.id
-      })
+      User.findOrCreate({ username: req.body[username] }).complete(function(
+        err,
+        results
+      ) {
+        user.id;
+      });
       var params = {
         text: req.body[text],
-        userid: ,
+        userid: "",
         roomname: req.body[roomname]
       };
       Message.create(params).complete(function(err, results) {
